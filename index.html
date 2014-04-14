@@ -45,13 +45,25 @@
     <img src="https://www.python.org/static/img/python-logo.png" alt="Python Logo" height="64">
     
     <h2>F# Code Examples</h2>
-    <p>Simplicity</p>
+    <p>Some of the qualities of the language: clean, minimalist, efficient, elegant, safe.</p>
     <pre class="code">
         // define a square function
         let square x = x * x
         // use it
         square 3
         val it : int = 9
+    </pre>
+    <p>The |> operator is fairly distinctive of F#; it allows composition of small operations in "pipelines":</p>
+    <pre class="code">
+        // define simple functions
+        let square x = x * x
+        let multiply x y = x * y
+        let add x y = x + y
+        // Compose them into pipelines with |>
+        square 3 
+        |> add 1 
+        |> multiply 5
+        val it : int = 50
     </pre>
 </body>
 </html>
