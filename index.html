@@ -2,9 +2,13 @@
 <html>
 <head>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <style>
       body {
         font-family: 'Open Sans', serif;
+      }
+      .code {
+          font-family: 'Inconsolata', sans-serif;
       }
     </style>
 </head>
@@ -41,6 +45,13 @@
     <img src="https://www.python.org/static/img/python-logo.png" alt="Python Logo" height="64">
     
     <h2>F# Code Examples</h2>
-    
+    <p>Simplicity</p>
+    <pre class="code">
+        // define a square function
+        let square x = x * x
+        // use it
+        square 3
+        val it : int = 9
+    </pre>
 </body>
 </html>
